@@ -61,10 +61,11 @@ A monogram drawn as a feedback loop with a polarity sign, five colours, three ty
 
 <img src="docs/images/cv.png" alt="One-page visual CV" width="420">
 
-- **Top band:** name, the line *Making AI safe enough to fly*, degree, GPA and contacts. Plain, large and scannable.
-- **Middle:** three projects, each beside a small loop diagram: LineCheck, FDIR Copilot and Sepsis Early Warning.
-- **Lower band:** research (two papers accepted at AIAA SciTech 2027, one at the 77th IAC) and skills.
-- **Footer:** a QR code to the live portfolio.
+- **Header band:** name, *Making AI safe enough to fly*, a one-line research summary and every contact. Plain, large and scannable.
+- **Left column:** education (GPA 7.9), all three publications, certifications and skills.
+- **Right column:** Blue Marble Space research, five projects (each with venue, tools and one result) and programs.
+- **Pipeline strip:** the four steps every project follows, styled like the portfolio's windows.
+- **Footer:** a working QR code to the live portfolio, drawn as a Canva shape so it stays editable.
 
 ### 3. Live portfolio
 
@@ -85,8 +86,8 @@ A monogram drawn as a feedback loop with a polarity sign, five colours, three ty
 
 | Depth | Time | Where | What the reader gets |
 |---|---|---|---|
-| Skim | 7 seconds | CV top band | The six facts recruiters look for |
-| Scan | 30 seconds | CV project loops | What each project fixed, as problem → action → result |
+| Skim | 7 seconds | CV header band | The six facts recruiters look for |
+| Scan | 30 seconds | CV columns and pipeline | Research, projects and one result per project |
 | Read | 3 minutes | Portfolio, via the QR code | Papers, live demos, replays and code |
 
 The loop is the visual idea and also the argument. My research is about verifying AI before people rely on it, so every project is drawn as the same pipeline: sense the signal, model it, verify it, and leave the final decision to a qualified person.
@@ -130,6 +131,7 @@ I did not copy either. I took one idea from each and built my own content on it.
 | 14:30 | First website rejected: too templated. Studied Figma Weave and TypeSafe and rebuilt the portfolio |
 | 15:00 | Pulled real projects and numbers from GitHub and my résumé; repositioned around AI verification research |
 | 15:30 | Deployed the site to GitHub Pages, added the URL and QR code to the CV |
+| 16:00 | Rebuilt the CV from scratch in Canva: the generated loop layout was mostly empty space, so it became two dense columns, a pipeline strip and a working QR code |
 
 **Tools:** Canva (brand board and CV), the Canva connector inside Claude to draft and edit designs, Claude (Anthropic) for research, copy and the site, GitHub Pages for hosting.
 
@@ -138,7 +140,7 @@ I did not copy either. I took one idea from each and built my own content on it.
 | Piece | Made in |
 |---|---|
 | Brand board | Canva |
-| CV | Canva, then text edited through the Canva connector |
+| CV | Canva, laid out element by element through the Canva connector |
 | Portfolio | Hand-built HTML and CSS (no framework), hosted on GitHub Pages |
 | Strategy brief | HTML page |
 
@@ -171,7 +173,6 @@ The portfolio is one self-contained HTML file. To run it locally, open `site/ind
 
 ## Next steps
 
-- Swap the CV's QR placeholder for the live code (`site/qr.png`)
 - Add paper links when the AIAA SciTech 2027 proceedings are published
 - Resize the brand board into a LinkedIn banner
 - Add a short case-study page for each project
