@@ -63,7 +63,7 @@ A monogram drawn as a feedback loop with a polarity sign, five colours, three ty
 
 - **Header band:** name, *Making AI safe enough to fly*, a one-line research summary and every contact. Plain, large and scannable.
 - **Left column:** education (GPA 7.9), all three publications, certifications and skills.
-- **Right column:** Blue Marble Space research, five projects (each with venue, tools and one result) and programs.
+- **Right column:** Blue Marble Space research, five project entries (FDIR Copilot, LineCheck, ClaimSaathi, Fitted, and her clinical ML work, each with venue, tools and one result) and programs.
 - **Pipeline strip:** the four steps every project follows, styled like the portfolio's windows.
 - **Footer:** a working QR code to the live portfolio, drawn as a Canva shape so it stays editable.
 
@@ -76,8 +76,8 @@ A monogram drawn as a feedback loop with a polarity sign, five colours, three ty
 - **Hero:** "Making AI safe enough to fly." over an animated grain gradient, with a news window announcing the papers.
 - **How I work:** a node canvas of four connected steps (sense → model → verify → a human signs) that every project follows.
 - **Research:** the three papers and the Blue Marble Space Young Scientist Program role, each as a desktop window.
-- **Projects:** six projects from GitHub, each with one headline number and links to live demos and code.
-- **This week:** three hackathons in three days, plus education, certifications and programs.
+- **Projects:** eight projects from GitHub, each with one headline number and links to live demos and code.
+- **This week:** five hackathons in one week (Paris, San Francisco, Berlin, London, Bengaluru), plus education, certifications and programs.
 - **Contact:** email, LinkedIn and GitHub.
 
 ---
@@ -167,7 +167,7 @@ The portfolio is one self-contained HTML file. To run it locally, open `site/ind
 ## What I learned
 
 - **Facts first.** The most creative choice on the CV is how plain the top band is.
-- **One story beats many projects.** Repositioning around verification ("making AI safe enough to fly") made six unrelated-looking projects read as one body of work.
+- **One story beats many projects.** Repositioning around verification ("making AI safe enough to fly") made eight unrelated-looking projects, from satellites to insurance claims, read as one body of work: each ends with a decision a person can check.
 - **Generated templates weren't enough.** The first website draft was generic. Studying two real interfaces and taking one idea from each produced something with a point of view.
 - **Every number needs a source.** Each metric on the CV and site comes from my résumé or a project README, and the sepsis result notes that the public demo runs on synthetic data.
 
@@ -189,10 +189,10 @@ Researching systems engineering and verification frameworks for AI in safety-cri
 
 ## Thanks
 
-Thank you to **Bright Creative** and hosts **Ana Davila** and **Ninna Bianca Dulalia** for running the Canva Gen© Student Hackathon, to the **Canva** team for the tools and for reviewing our work, and to every student who built alongside me. Thanks also to **Paras Adlakha**, my teammate on LineCheck and FDIR Copilot earlier this week.
+Thank you to **Bright Creative** and hosts **Ana Davila** and **Ninna Bianca Dulalia** for running the Canva Gen© Student Hackathon, to the **Canva** team for the tools and for reviewing our work, and to every student who built alongside me. Thanks also to **Paras Adlakha**, my teammate on FDIR Copilot, LineCheck, Fitted and ClaimSaathi this week.
 
 ## References
 
 - Ladders, *Eye-Tracking Study* (2012; updated 2018), via [WEF](https://weforum.org/stories/2014/11/what-recruiters-look-your-cv-resume) and [Barclay Simpson](https://www.barclaysimpson.com/how-long-do-recruiters-spend-looking-at-cv/)
 - [Figma Weave](https://www.figma.com/solutions/figma-ai-tool-weave/) and [TypeSafe](https://typesafe.ai/), design references
-- Projects referenced: [FDIR Copilot](https://github.com/HarshitaAdlakha/fdir-copilot) · [LineCheck](https://github.com/HarshitaAdlakha/linecheck) · [PharmaSentinel](https://github.com/HarshitaAdlakha/pharmasentinel) · [Sepsis Early Warning](https://github.com/HarshitaAdlakha/sepsis-early-warning) · [Hospital Readmission Predictor](https://github.com/HarshitaAdlakha/hospital-readmission-predictor) · [Off-World Robot Architect](https://github.com/HarshitaAdlakha/Off-World-Robot-Architect-Lunar-Martian-Mechanical-Assistant-Simulator)
+- Projects referenced: [FDIR Copilot](https://github.com/HarshitaAdlakha/fdir-copilot) · [LineCheck](https://github.com/HarshitaAdlakha/linecheck) · [ClaimSaathi](https://github.com/HarshitaAdlakha/claimsaathi) · [Fitted](https://github.com/HarshitaAdlakha/fitted) · [PharmaSentinel](https://github.com/HarshitaAdlakha/pharmasentinel) · [Sepsis Early Warning](https://github.com/HarshitaAdlakha/sepsis-early-warning) · [Hospital Readmission Predictor](https://github.com/HarshitaAdlakha/hospital-readmission-predictor) · [Off-World Robot Architect](https://github.com/HarshitaAdlakha/Off-World-Robot-Architect-Lunar-Martian-Mechanical-Assistant-Simulator)

@@ -112,7 +112,7 @@ section{padding-block:96px}
 
 /* timeline */
 .blueband{background:linear-gradient(180deg,var(--paper),#dfe9f7 60%,var(--paper))}
-.week{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:24px}
+.week{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:24px}
 .day .wb{gap:8px}
 .day .date{font:400 12px/1 var(--mono);color:var(--muted)}
 .day h3{font-size:1.5rem;letter-spacing:-.035em;font-weight:600}
@@ -153,7 +153,7 @@ footer small{font:400 12px/1.5 var(--mono);color:var(--muted)}
   <div class="inner">
     <p class="kicker">Harshita Adlakha · B.Tech ECE, Bangalore Institute of Technology</p>
     <h1>Making AI safe enough to fly.</h1>
-    <p class="sub">I'm an electronics and communication engineer researching how to verify AI in safety-critical aerospace systems, and building the AI to match: satellite fault diagnosis, aircraft inspection, clinical early warning. Every system ends with a decision a person can check and sign.</p>
+    <p class="sub">I'm an electronics and communication engineer researching how to verify AI in safety-critical aerospace systems, and building the AI to match: satellite fault diagnosis, aircraft inspection, insurance claims, clinical early warning. Every system ends with a decision a person can check and sign.</p>
     <div class="links">
       <a href="#research">Research</a>
       <a href="#work">Projects</a>
@@ -165,8 +165,8 @@ footer small{font:400 12px/1.5 var(--mono);color:var(--muted)}
 
 <div class="strip" aria-hidden="true">
   <div class="row">
-    <span>AIAA SciTech 2027 · <b>2</b> papers accepted</span><span>IAC 2026 · <b>77th</b> International Astronautical Congress</span><span>FDIR Copilot · <b>93%</b> root-cause accuracy</span><span>Sepsis Early Warning · <b>~0.91</b> AUROC, 7 h ahead</span><span>PharmaSentinel · <b>215K+</b> clinical reviews</span><span>Google Cloud · <b>Generative AI Leader</b></span><span>IBM <b>Qiskit Advocate</b></span>
-    <span>AIAA SciTech 2027 · <b>2</b> papers accepted</span><span>IAC 2026 · <b>77th</b> International Astronautical Congress</span><span>FDIR Copilot · <b>93%</b> root-cause accuracy</span><span>Sepsis Early Warning · <b>~0.91</b> AUROC, 7 h ahead</span><span>PharmaSentinel · <b>215K+</b> clinical reviews</span><span>Google Cloud · <b>Generative AI Leader</b></span><span>IBM <b>Qiskit Advocate</b></span>
+    <span>AIAA SciTech 2027 · <b>2</b> papers accepted</span><span>IAC 2026 · <b>77th</b> International Astronautical Congress</span><span><b>5</b> hackathons in one week</span><span>FDIR Copilot · <b>93%</b> root-cause accuracy</span><span>ClaimSaathi · a clause behind <b>every rupee</b></span><span>Fitted · <b>$0.002</b> per AI call</span><span>Sepsis Early Warning · <b>~0.91</b> AUROC, 7 h ahead</span><span>Google Cloud · <b>Generative AI Leader</b></span>
+    <span>AIAA SciTech 2027 · <b>2</b> papers accepted</span><span>IAC 2026 · <b>77th</b> International Astronautical Congress</span><span><b>5</b> hackathons in one week</span><span>FDIR Copilot · <b>93%</b> root-cause accuracy</span><span>ClaimSaathi · a clause behind <b>every rupee</b></span><span>Fitted · <b>$0.002</b> per AI call</span><span>Sepsis Early Warning · <b>~0.91</b> AUROC, 7 h ahead</span><span>Google Cloud · <b>Generative AI Leader</b></span>
   </div>
 </div>
 
@@ -239,7 +239,7 @@ footer small{font:400 12px/1.5 var(--mono);color:var(--muted)}
 
 <section class="gut" id="work" aria-labelledby="workh" style="padding-top:0">
   <div class="inner">
-    <div class="label"><span>Selected work</span><span>[6 projects · github.com/HarshitaAdlakha]</span></div>
+    <div class="label"><span>Selected work</span><span>[8 projects · github.com/HarshitaAdlakha]</span></div>
     <h2 class="big" id="workh" style="margin-bottom:48px">Built, measured, shipped.</h2>
     <div class="grid">
 
@@ -271,6 +271,30 @@ footer small{font:400 12px/1.5 var(--mono);color:var(--muted)}
           <div class="metric"><b>9</b><span>steps in one call, from tail number to a signed-off work order</span></div>
           <div class="chips"><span class="tag">OpenAI Realtime</span><span class="tag">LiveKit</span><span class="tag">Chert</span><span class="tag">Keenable</span></div>
           <div class="acts"><a class="btn y" href="https://parasadlakha.github.io/linecheck/">Replay a call</a><a class="btn" href="https://github.com/HarshitaAdlakha/linecheck">Code</a></div>
+        </div>
+      </article>
+
+      <article class="win proj">
+        <div class="tb"><span>claimsaathi.js · Paytm Build for India AI</span><span class="btns"><i></i><i></i><i></i></span></div>
+        <div class="wb">
+          <span class="pix">Insurance · fintech</span>
+          <h3>ClaimSaathi</h3>
+          <p class="what">Know what your health insurer will pay before you file. It reads the hospital bill, checks every line against the policy and IRDAI rules, explains each cut in Hindi or English, and drafts the grievance when a settlement breaks the rules.</p>
+          <div class="metric"><b>₹10,498</b><span>wrongful deduction found and contested in the sample claim · a clause behind every rupee</span></div>
+          <div class="chips"><span class="tag">rules engine</span><span class="tag">vision AI</span><span class="tag">Hindi + English</span><span class="tag">voice</span></div>
+          <div class="acts"><a class="btn y" href="https://harshitaadlakha.github.io/claimsaathi/app/">Try the app</a><a class="btn" href="https://github.com/HarshitaAdlakha/claimsaathi">Code</a></div>
+        </div>
+      </article>
+
+      <article class="win proj">
+        <div class="tb"><span>fitted.js · Stripe × Supabase · Berlin</span><span class="btns"><i></i><i></i><i></i></span></div>
+        <div class="wb">
+          <span class="pix">Small business · payments</span>
+          <h3>Fitted</h3>
+          <p class="what">Describe your business in one paragraph, get booking software that fits it: courts for a padel club, a bike map for a spin studio, stylists for a salon. Customers pay through Stripe Connect; Supabase refuses double bookings at the database level.</p>
+          <div class="metric"><b>$0.002</b><span>per AI call · AI runs only at setup and on changes, never on a booking</span></div>
+          <div class="chips"><span class="tag">Stripe Connect</span><span class="tag">Supabase</span><span class="tag">structured outputs</span></div>
+          <div class="acts"><a class="btn y" href="https://harshitaadlakha.github.io/fitted/">Project page</a><a class="btn" href="https://github.com/HarshitaAdlakha/fitted">Code</a></div>
         </div>
       </article>
 
@@ -310,15 +334,20 @@ footer small{font:400 12px/1.5 var(--mono);color:var(--muted)}
         </div>
       </article>
 
-      <article class="win proj">
+      <article class="win proj feat">
         <div class="tb"><span>off_world_robot.tsx · Blue Marble Space</span><span class="btns"><i></i><i></i><i></i></span></div>
         <div class="wb">
-          <span class="pix">Planetary robotics</span>
-          <h3>Off-World Robot Architect</h3>
-          <p class="what">A CAD workbench and human-robot teaming simulator for robots that assist 100-person lunar and Martian outposts, built alongside her Blue Marble Space research.</p>
-          <div class="metric"><b>−153°C</b><span>the Martian night the joints, seals and batteries have to survive</span></div>
-          <div class="chips"><span class="tag">TypeScript</span><span class="tag">simulation</span><span class="tag">AI evaluation</span></div>
-          <div class="acts"><a class="btn" href="https://github.com/HarshitaAdlakha/Off-World-Robot-Architect-Lunar-Martian-Mechanical-Assistant-Simulator">Code</a></div>
+          <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
+            <span class="pix">Planetary robotics</span>
+            <h3>Off-World Robot Architect</h3>
+            <p class="what">A CAD workbench and human-robot teaming simulator for robots that assist 100-person lunar and Martian outposts, built alongside her Blue Marble Space research.</p>
+            <div class="chips"><span class="tag">TypeScript</span><span class="tag">simulation</span><span class="tag">AI evaluation</span></div>
+            <div class="acts"><a class="btn y" href="https://off-world-robot-architect-lunar-martian.onrender.com/">Live demo (wakes in ~1 min)</a><a class="btn" href="https://github.com/HarshitaAdlakha/Off-World-Robot-Architect-Lunar-Martian-Mechanical-Assistant-Simulator">Code</a></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:12px;justify-content:center">
+            <div class="metric"><b>−153°C</b><span>the Martian night the joints, seals and batteries have to survive</span></div>
+            <p style="font:400 12.5px/1.5 var(--mono)">Regolith that clings and erodes, dust storms that block 99% of sunlight, a thin CO₂ atmosphere that barely cools. The simulator scores every design against them.</p>
+          </div>
         </div>
       </article>
 
@@ -328,15 +357,19 @@ footer small{font:400 12px/1.5 var(--mono);color:var(--muted)}
 
 <section class="blueband gut" id="week" aria-labelledby="weekh">
   <div class="inner">
-    <div class="label"><span>This week</span><span>[3 cities · 3 days]</span></div>
-    <h2 class="big" id="weekh" style="margin-bottom:48px">Paris. San Francisco. London.</h2>
+    <div class="label"><span>This week</span><span>[5 hackathons · 5 cities]</span></div>
+    <h2 class="big" id="weekh" style="margin-bottom:48px">Five hackathons. One week.</h2>
     <div class="week">
       <div class="win day"><div class="tb"><span>Thu · Paris</span><span class="btns"><i></i></span></div>
         <div class="wb"><span class="date">22 Oct 2026</span><h3>Accel AI Innovate: Future Founders</h3><p>Built FDIR Copilot, the satellite root-cause agent.</p></div></div>
       <div class="win day"><div class="tb"><span>Fri · San Francisco (remote)</span><span class="btns"><i></i></span></div>
         <div class="wb"><span class="date">23 Oct 2026</span><h3>Beta Fund × AWS × OpenAI</h3><p>Built LineCheck, the FaceTime aircraft inspector.</p></div></div>
+      <div class="win day"><div class="tb"><span>Sat · Berlin</span><span class="btns"><i></i></span></div>
+        <div class="wb"><span class="date">24 Oct 2026</span><h3>Stripe × Supabase: AI Payments</h3><p>Built Fitted, booking software from one paragraph.</p></div></div>
       <div class="win day"><div class="tb"><span>Sat · London</span><span class="btns"><i></i></span></div>
         <div class="wb"><span class="date">24 Oct 2026</span><h3>Canva Gen© Student Hackathon</h3><p>Designed this personal brand, CV and site.</p></div></div>
+      <div class="win day"><div class="tb"><span>Bengaluru</span><span class="btns"><i></i></span></div>
+        <div class="wb"><span class="date">Stage 1 · 27 Oct 2026</span><h3>Paytm Build for India AI</h3><p>Building ClaimSaathi, the health-claim companion.</p></div></div>
     </div>
     <div class="win edu">
       <div class="tb"><span>education.txt</span><span class="btns"><i></i><i></i></span></div>
