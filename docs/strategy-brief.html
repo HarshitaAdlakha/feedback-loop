@@ -1,0 +1,228 @@
+<title>Harshita's Canva Hackathon Brief</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; each section opens with a mono label; loop diagram as the single visual moment */
+:root{
+  --bg:#f6f7f9; --surface:#ffffff; --fg:#17192b; --muted:#596079; --line:#dcdfe8;
+  --accent:#0d7a78; --accent-soft:#e2f3f2; --pos:#b77900; --pos-soft:#fbf1dc;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#11131c; --surface:#1a1d29; --fg:#e8eaf2; --muted:#9ca3ba; --line:#2d3142;
+  --accent:#4cc7c3; --accent-soft:#16302f; --pos:#f0b84a; --pos-soft:#33281a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11131c; --surface:#1a1d29; --fg:#e8eaf2; --muted:#9ca3ba; --line:#2d3142;
+  --accent:#4cc7c3; --accent-soft:#16302f; --pos:#f0b84a; --pos-soft:#33281a; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15.5px/1.6 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:36px 72px}
+.wrap{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:44px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.08;margin:0}
+h1{font-size:clamp(2.1rem,6vw,3.3rem);font-weight:800;letter-spacing:-.015em}
+h2{font-size:1.7rem;font-weight:700;letter-spacing:-.01em}
+h3{font-size:1.12rem;font-weight:700}
+p{margin:0;max-width:68ch}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+section{display:flex;flex-direction:column;gap:14px}
+.tag{font:500 .72rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.lede{font-size:1.06rem;color:var(--muted)}
+.clock{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 .78rem/1 var(--mono);padding:7px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--fg);font-variant-numeric:tabular-nums}
+.chip.live{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.verdict{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--accent);padding:22px;display:flex;flex-direction:column;gap:12px}
+.verdict .name{font:800 1.6rem/1.1 var(--display)}
+ul,ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px;max-width:70ch}
+.layers{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.layer{background:var(--surface);border:1px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.layer .t{font:600 1.5rem/1 var(--display);font-variant-numeric:tabular-nums;color:var(--accent)}
+.layer p{font-size:.93rem}
+.tbl{overflow-x:auto;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.9rem}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font:500 .7rem/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--accent-soft)}
+tr:last-child td{border-bottom:0}
+td.n{font:500 .85rem/1.5 var(--mono);white-space:nowrap;color:var(--accent);font-variant-numeric:tabular-nums}
+.diagram{background:var(--surface);border:1px solid var(--line);padding:12px;overflow-x:auto}
+.diagram svg{display:block;width:100%;min-width:520px;height:auto}
+.note{font-size:.86rem;color:var(--muted)}
+.paste{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.card pre{margin:0;white-space:pre-wrap;word-break:break-word;font:400 .88rem/1.6 var(--mono);color:var(--fg)}
+button.copy{font:500 .72rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer;border-radius:4px;flex:none}
+button.copy:hover{background:var(--accent-soft)}
+.fill{background:var(--pos-soft);color:var(--pos);padding:0 3px;border-radius:2px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+footer{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;display:flex;flex-direction:column;gap:6px}
+</style>
+
+<div class="wrap">
+
+<header style="display:flex;flex-direction:column;gap:14px">
+  <span class="tag">Canva Gen© Student Hackathon London · Bright Creative · Sat 24 Oct 2026</span>
+  <h1>The Feedback Loop CV: a plan for Harshita</h1>
+  <p class="lede">Idea selection, a build plan and ready-to-paste copy for Harshita Adlakha. Background: system dynamics and socio-technical systems. Fresh proof of work: LineCheck, built yesterday at the Beta Fund × AWS × OpenAI hackathon. No code today; everything is made in Canva.</p>
+  <div class="clock">
+    <span class="chip">10:00–18:00 BST</span>
+    <span class="chip live">Brief written 13:47 · about 4 hours left</span>
+    <span class="chip">Challenges: Personal Branding · Future Portfolio · Creative CVs</span>
+  </div>
+</header>
+
+<section>
+  <span class="tag">Recommendation</span>
+  <div class="verdict">
+    <span class="name">Feedback Loop: a CV that reads in 7 seconds and explains itself in 30</span>
+    <p>Build one connected personal system in Canva instead of three loose pieces: a <strong>brand kit</strong>, a <strong>one-page visual CV</strong>, and a <strong>one-page Canva website</strong> that acts as the portfolio. The CV is the entry point; a QR code on it opens the site.</p>
+    <p>The twist that only Harshita can bring: each project is shown as a small <strong>causal loop</strong> (problem → what I did → what changed), the notation of system dynamics. Recruiters skim the top band; anyone curious follows the loop.</p>
+    <p><strong>Why this one:</strong> it answers all three challenges with one story, it is grounded in real recruiter behaviour, and the loop motif is a visual identity nobody else in the room will have.</p>
+  </div>
+</section>
+
+<section>
+  <span class="tag">The problem</span>
+  <h2>Recruiters skim; creative CVs often hide the facts</h2>
+  <ul>
+    <li>Ladders' eye-tracking study found recruiters spent about <strong>6 seconds</strong> on an initial CV screen, revised to <strong>7.4 seconds</strong> in 2018.</li>
+    <li>About <strong>80%</strong> of that time went to six facts: name, current title and company, previous title and company, start and end dates, and education.</li>
+    <li>Other measurements differ (a 2023 tracking study put review time at 17–46 seconds), and Ladders sells CV services, so quote it as a range, not a law.</li>
+  </ul>
+  <p>The design rule that follows: put those six facts where the eye lands first, and let the creative layer add depth without slowing the skim. Most "creative CVs" do the opposite.</p>
+</section>
+
+<section>
+  <span class="tag">The concept</span>
+  <h2>Three reading depths, one design</h2>
+  <div class="layers">
+    <div class="layer"><span class="t">7 s</span><h3>The skim band</h3><p>Top third of the CV. Name, one-line positioning, current and previous role, dates, education. Large, plain, scannable. No icons standing in for words.</p></div>
+    <div class="layer"><span class="t">30 s</span><h3>The loops</h3><p>Two or three project loops in the middle. Each is a ring with three nodes and a polarity sign: the problem, the intervention, the result. LineCheck goes first.</p></div>
+    <div class="layer"><span class="t">3 min</span><h3>The website</h3><p>QR code and short link to a one-page Canva site: the full LineCheck case study, the slides, the demo replay, and a contact block.</p></div>
+  </div>
+</section>
+
+<section>
+  <span class="tag">The motif</span>
+  <h2>A project as a reinforcing loop</h2>
+  <p>This is the visual unit to rebuild in Canva (Whiteboard or plain shapes, then reuse it as an element). Shown with LineCheck as the example.</p>
+  <div class="diagram" role="img" aria-label="Reinforcing loop: technician shortage leads to less experience per shift, which leads to more errors; LineCheck puts a second opinion on every call, which reduces errors.">
+    <svg viewBox="0 0 720 330" xmlns="http://www.w3.org/2000/svg" font-family="Public Sans, system-ui, sans-serif">
+      <defs>
+        <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--muted)"/></marker>
+        <marker id="ahA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--accent)"/></marker>
+      </defs>
+      <circle cx="270" cy="165" r="110" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <path d="M270 55 A110 110 0 0 1 375 140" fill="none" stroke="var(--muted)" stroke-width="2" marker-end="url(#ah)"/>
+      <path d="M368 215 A110 110 0 0 1 200 255" fill="none" stroke="var(--muted)" stroke-width="2" marker-end="url(#ah)"/>
+      <path d="M168 205 A110 110 0 0 1 240 60" fill="none" stroke="var(--muted)" stroke-width="2" marker-end="url(#ah)"/>
+      <text x="270" y="172" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="34" fill="var(--pos)">R</text>
+      <text x="270" y="194" text-anchor="middle" font-size="12" fill="var(--muted)">experience drain</text>
+      <rect x="196" y="22" width="148" height="40" rx="20" fill="var(--surface)" stroke="var(--fg)" stroke-width="1.5"/>
+      <text x="270" y="47" text-anchor="middle" font-size="13" font-weight="600" fill="var(--fg)">Senior techs retire</text>
+      <rect x="340" y="140" width="170" height="40" rx="20" fill="var(--surface)" stroke="var(--fg)" stroke-width="1.5"/>
+      <text x="425" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="var(--fg)">Less experience per shift</text>
+      <rect x="60" y="236" width="170" height="40" rx="20" fill="var(--surface)" stroke="var(--fg)" stroke-width="1.5"/>
+      <text x="145" y="261" text-anchor="middle" font-size="13" font-weight="600" fill="var(--fg)">More errors and rework</text>
+      <text x="356" y="92" font-family="JetBrains Mono, monospace" font-size="15" fill="var(--pos)">+</text>
+      <text x="300" y="262" font-family="JetBrains Mono, monospace" font-size="15" fill="var(--pos)">+</text>
+      <text x="166" y="110" font-family="JetBrains Mono, monospace" font-size="15" fill="var(--pos)">+</text>
+      <rect x="520" y="226" width="180" height="60" rx="8" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+      <text x="610" y="252" text-anchor="middle" font-size="13" font-weight="700" fill="var(--accent)">LineCheck</text>
+      <text x="610" y="271" text-anchor="middle" font-size="12" fill="var(--fg)">second opinion on every call</text>
+      <path d="M520 262 L236 262" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ahA)"/>
+      <text x="470" y="254" font-family="JetBrains Mono, monospace" font-size="15" fill="var(--accent)">−</text>
+    </svg>
+  </div>
+  <p class="note">On the CV, shrink each loop to three nodes plus one intervention arrow. Keep the + and − signs: they are the detail that tells judges this is real system dynamics, not decoration.</p>
+</section>
+
+<section>
+  <span class="tag">Deliverables</span>
+  <h2>What to make, and with which Canva tool</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Piece</th><th>Challenge</th><th>Canva tools</th><th>Done when</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Brand kit</strong>: monogram "HA" built from a loop, 2 typefaces, 4 colours</td><td>Personal Branding</td><td>Brand Kit, Dream Lab or Magic Media for texture, shapes for the monogram</td><td>Colours and fonts saved, so every other piece pulls from them</td></tr>
+      <tr><td><strong>Visual CV</strong>: A4, skim band plus 2–3 project loops</td><td>Creative CVs</td><td>Docs or an A4 design, Magic Write for tightening bullets, QR code app</td><td>Passes the 7-second test on a friend</td></tr>
+      <tr><td><strong>Portfolio site</strong>: one page, LineCheck case study first</td><td>Future Portfolio</td><td>Canva Websites (custom navigation and buttons), embed slides and links</td><td>Published link works on a phone</td></tr>
+      <tr><td><strong>LinkedIn banner and one social card</strong></td><td>Personal Branding</td><td>Resize to new formats, AI post writer for the caption</td><td>Same loop motif, same palette</td></tr>
+      <tr><td><strong>Pitch</strong>: 3 slides or a 60–90 second walk-through</td><td>All</td><td>Presentations, Present mode</td><td>Rehearsed twice, under time</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Feature names follow Canva's 2026 release notes as far as I could confirm them; if a menu item has a different name in the editor, the Canva team in the room can point to it.</p>
+</section>
+
+<section>
+  <span class="tag">Build plan · London time</span>
+  <h2>From 14:00 to 18:00</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Time</th><th>Do this</th></tr></thead>
+    <tbody>
+      <tr><td class="n">14:00</td><td>Ask the organisers the exact submission format and pitch time. Adjust the plan below if pitches start before 17:00.</td></tr>
+      <tr><td class="n">14:10</td><td>Brand kit: pick palette and type, draw the loop monogram. Cap it at 30 minutes.</td></tr>
+      <tr><td class="n">14:40</td><td>CV: skim band first, then the LineCheck loop, then one or two more loops (a degree project and one other).</td></tr>
+      <tr><td class="n">15:40</td><td>Website: hero line, LineCheck case study, links to the slides and demo replay, contact. Publish and generate the QR code for the CV.</td></tr>
+      <tr><td class="n">16:30</td><td>Resize into a LinkedIn banner and one social card. Freeze design work.</td></tr>
+      <tr><td class="n">16:45</td><td>Pitch deck: problem (7.4 seconds), concept (three depths), demo (scan the QR live), why me. Rehearse twice.</td></tr>
+      <tr><td class="n">17:30</td><td>Submit. Ask a Canva mentor for one round of feedback and note it for the portfolio.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <span class="tag">Ready to paste</span>
+  <h2>Copy for the CV, site and pitch</h2>
+  <p class="note">Highlighted text needs Harshita's real details; I did not have her university, year or contact info.</p>
+  <div class="paste">
+    <div class="card"><header><h3>Positioning line</h3><button class="copy" type="button" id="c1">Copy</button></header>
+      <pre>Systems thinker who designs for the people inside the system. System dynamics · socio-technical design · AI products that ship.</pre></div>
+    <div class="card"><header><h3>Short bio (website hero)</h3><button class="copy" type="button" id="c2">Copy</button></header>
+      <pre>I'm Harshita, a <span class="fill">[year / degree]</span> student at <span class="fill">[university]</span>. I study how people, technology and organisations push on each other, and I use that to design products that fit real work. Yesterday I co-built LineCheck, an AI inspector aircraft technicians can FaceTime. Today I'm building my own system: this site.</pre></div>
+    <div class="card"><header><h3>LineCheck, as a CV entry</h3><button class="copy" type="button" id="c3">Copy</button></header>
+      <pre>LineCheck · Beta Fund × AWS × OpenAI Multi-Model Hackathon, San Francisco (remote) · Oct 2026
+Co-built in one day with Paras Adlakha: an AI inspector aircraft technicians call on FaceTime. It inspects a photo of the part, cites the FAA repair manual, checks service history and airworthiness directives, and drafts the work order for a certificated mechanic to sign.
+Loop: technician shortage → less experience per shift → more errors. LineCheck cuts the last link.</pre></div>
+    <div class="card"><header><h3>Prompt for Canva AI: monogram texture</h3><button class="copy" type="button" id="c4">Copy</button></header>
+      <pre>Minimal abstract pattern of overlapping circular feedback loops with small arrowheads, flat vector, teal and warm amber on off-white, lots of empty space, no text</pre></div>
+    <div class="card"><header><h3>60-second pitch</h3><button class="copy" type="button" id="c5">Copy</button></header>
+      <pre>Recruiters spend about seven seconds on a CV, and most of that on six facts. Creative CVs usually bury those facts under design. Mine is built in three depths. In seven seconds you get the facts. In thirty you get my projects as feedback loops, because I study system dynamics and that is how I think: a problem, what I changed, and what happened next. In three minutes, scan this QR code and you get the full story. The first loop is LineCheck, an AI aircraft inspector I helped build yesterday. Everything here was made in Canva today, on one brand kit, so the CV, the site and my LinkedIn all read as one system.</pre></div>
+  </div>
+</section>
+
+<section>
+  <span class="tag">Backups</span>
+  <h2>If the loop idea doesn't fit the brief on the day</h2>
+  <div class="cols">
+    <div class="card"><h3>Portfolio as a timeline of decisions</h3><p>Each project shown as the two or three decisions that shaped it, with the option not taken. Strong for "Future Portfolio"; weaker on visual identity.</p></div>
+    <div class="card"><h3>CV that adapts by reader</h3><p>One site, three entry buttons: recruiter, engineer, founder. Each shows the same projects at a different depth. Good demo, more pages to build in four hours.</p></div>
+  </div>
+</section>
+
+<section>
+  <span class="tag">Open questions</span>
+  <h2>For Harshita to check</h2>
+  <ul>
+    <li>Are teams formed on the day? If so, the three pieces split cleanly across three people.</li>
+    <li>What university and year should the CV list, and which second and third projects go in the loops?</li>
+    <li>Is the work judged on the files, on the pitch, or both? That decides whether to spend the last hour on polish or rehearsal.</li>
+  </ul>
+</section>
+
+<footer>
+  <span>Event details from the Luma page (Bright Creative, hosts Ana Davila and Ninna Bianca Dulalia). Judging criteria were not published; the plan assumes the Canva team rewards a clear idea, polish, and use of Canva's tools.</span>
+  <span>Sources: <a href="https://luma.com/zkjafnlt">Luma event page</a> · <a href="https://www.barclaysimpson.com/how-long-do-recruiters-spend-looking-at-cv/">Barclay Simpson on CV screening studies</a> · <a href="https://weforum.org/stories/2014/11/what-recruiters-look-your-cv-resume">WEF on the Ladders study</a> · <a href="https://www.canva.com/design-school/resources/whats-new-canva-sep26">Canva, What's new Sept 2026</a> · <a href="https://www.canva.com/design-school/resources/whats-new-canva-july26">Canva, What's new July 2026</a>. LineCheck details from the team's own repository.</span>
+</footer>
+</div>
+
+<script>
+document.querySelectorAll('button.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var pre=b.closest('.card').querySelector('pre');
+    var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)};
+    var fallback=function(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected'};
+    try{navigator.clipboard.writeText(pre.innerText).then(done,fallback)}catch(e){fallback()}
+  });
+});
+</script>
